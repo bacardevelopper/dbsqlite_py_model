@@ -4,11 +4,7 @@ import sqlite3
 conn = sqlite3.connect('ma_base.db')
 conn_sql = conn.cursor()
 
-# insert_exemple = "INSERT INTO employe VALUES("+id_rdm+","+nom+","+prenom+","+str(email)+")"
-
 # class
-
-
 class Db_crud:
     def __init__(self) -> None:
         pass
