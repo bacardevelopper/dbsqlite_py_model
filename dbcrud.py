@@ -35,6 +35,15 @@ class Db_crud:
                 print(data)
         except sqlite3.IntegrityError as e:
             print(e)
+            
+    def recuperer_un(self, id):
+        try:
+            conn_sql.execute('SELECT * FROM employe WHERE id = ?',(id,))
+            row_info = conn_sql.fetchone()
+            print('valeur recuperer : '+str(row_info))
+           
+        except sqlite3.IntegrityError as e:
+            print(e)
 
-    def closer():
+    def closer(self):
         conn_sql.close()

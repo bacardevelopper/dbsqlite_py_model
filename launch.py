@@ -13,6 +13,7 @@ request_creat_table = '''
 # config and launch methods
 db_main = Db_crud()
 # db_main.create_table(request_creat_table)
-email_recup = 'dato.data.pro@gmail.com'
+email_recup = 'dato.banga.pro@gmail.com'
 db_main.insert_data(id_rdm, 'bacar', 'darwin', email_recup)
+db_main.recuperer_un('dahmwpnanu')
 db_main.afficher_table()
