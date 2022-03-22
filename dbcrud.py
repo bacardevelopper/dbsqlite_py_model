@@ -6,6 +6,7 @@ conn_sql = conn.cursor()
 
 # class
 class Db_crud:
+    
     def __init__(self) -> None:
         pass
 
